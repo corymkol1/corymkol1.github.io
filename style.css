@@ -276,7 +276,7 @@ a:hover {
 	color: #555;
 	font: 400 0.875rem/1.875rem "Montserrat", sans-serif;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -2201,3 +2201,9 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+
+.img-fluid1 {
+ max-width: auto;
+ height: auto;
+}
