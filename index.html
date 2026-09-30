@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -70,10 +71,10 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-secondary text-white mb-0" id="about">
-            <div class="container">
+        <section class="bg-secondary1 text-white mb-3 mt-3" id="">
+            <div class="container mt-3">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="text-center text-uppercase text-white pt-3">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -82,17 +83,17 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-md mx-5 px-4"><p class="">I’m Cory, a business professional, developer, and entrepreneur with a diverse background in technology, accounting, customer service, hospitality, and business operations. I’ve built my career around solving problems, learning quickly, and finding practical ways to make systems, businesses, and ideas work better.</p>
-                    <p>
+                    <div class="col-md mx-5 px-4"><p class="text-white">I’m Cory, a business professional, developer, and entrepreneur with a diverse background in technology, accounting, customer service, hospitality, and business operations. I’ve built my career around solving problems, learning quickly, and finding practical ways to make systems, businesses, and ideas work better.</p>
+                    <p class="text-white">
                     My experience includes front-end web development, bookkeeping, tax preparation, business management, technical support, and content creation. I enjoy projects that combine creativity with logic—whether I’m building a website, developing a software project, organizing financial data, improving a business process, or creating something entirely new.
                     </p>
-                    <p>As the owner of The Tax Pro FL, LLC, I’ve also gained hands-on experience managing a business, working directly with clients, and helping small businesses and self-employed professionals better understand their finances. Entrepreneurship has strengthened my skills in project management, communication, problem-solving, and strategic thinking.
+                    <p class="text-white">As the owner of The Tax Pro FL, LLC, I’ve also gained hands-on experience managing a business, working directly with clients, and helping small businesses and self-employed professionals better understand their finances. Entrepreneurship has strengthened my skills in project management, communication, problem-solving, and strategic thinking.
                     </p>
                     </div>
                 </div>
                 <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="">
+                <div class="text-center mt-4 pb-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://corymkol1.github.io/">
                         <i class="fa-brands fa-github me-2"></i>
                         Github
                     </a>
@@ -100,61 +101,30 @@
             </div>
         </section>
 <!-- Contact Section-->
-<!--           
-    =======================================================================
+<form action="https://api.web3forms.com/submit" method="POST" class="p-4 border rounded shadow-sm bg-white" style="max-width: 500px; margin: 2rem auto;">
 
-    This is a working contact form. To receive email, 
-    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-
-    Create Access Key here 👉 https://web3forms.com/
-
-    =======================================================================
- -->
-
-        <!-- 
-    This is a working contact form. To receive email, 
-    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-
-    Create Access Key here 👉 https://web3forms.com/
- -->
-
-<section class="contact-section">
-  <div class="contact-intro">
-    <h2 class="contact-title">Get in Touch</h2>
-    <p class="contact-description">
-      Fill out the form below and we'll get back to you as soon as possible.
-    </p>
-  </div>
-
-  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input type="hidden" name="access_key" value="7804158c-c984-4423-9076-c00799bac78e" />
     <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
     <input type="hidden" name="from_name" value="My Website" />
-    <!-- More custom ization options available in the docs: https:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccrcetyu777777yyyyyy //docs.web3forms.com -->
+  
+  <!-- Name Input Group -->
+  <div class="mb-3">
+    <label for="userName" class="form-label fw-semibold">Full Name</label>
+    <input type="text" name="fullName" id="userName" class="form-control" placeholder="John Doe" required>
+  </div>
 
-    <div class="form-group-container">
-      <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-      </div>
-      <div class="form-group">
-        <label for="phone" class="form-label">Phone</label>
-        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-      </div>
-    </div>
-    <button class="form-submit" type="submit">Send Message</button>
-  </form>
+  <!-- Email Input Group -->
+  <div class="mb-3">
+    <label for="userEmail" class="form-label fw-semibold">Email Address</label>
+    <input type="email" name="emailAddress" id="userEmail" class="form-control" placeholder="name@example.com" required>
+  </div>
 
-</section>
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary w-100 fw-bold">Submit Form</button>
+
+</form>
+
+
 
 
 
@@ -164,38 +134,13 @@
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+            <div class="container"><small>Copyright &copy; Cory Kolvinsky 2026</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
